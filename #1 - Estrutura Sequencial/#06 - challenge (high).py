@@ -1,10 +1,12 @@
 # 6 - Faça um Programa que peça o raio de um círculo, calcule e mostre sua área.
 
 area = None
-while area == None:
+while area is None:
     try:
+        raioResposta = input("Informe o \033[0;33mraio\033[m do círculo: ")
+        raio = float(raioResposta.replace(',','.'))
+
         pi = 3.14159265358979323846
-        raio = float(input("Informe o \033[0;33mraio\033[m do círculo: "))
         area = (pi * (raio * raio))
         print(f"Referente ao \033[0;33mraio\033[m, o valor da \033[0;36márea\033[m do cículo é de: \033[0;33m{area:.{2}f}\033[m")
         break
