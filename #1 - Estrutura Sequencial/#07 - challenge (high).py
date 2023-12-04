@@ -57,7 +57,7 @@ def handleDoubledArea():
                     return "\033[0;91mErro!\033[m"
                 else:
                     return doubledArea
-
+                    
 
 MySquare2 = handleDoubledArea()
 print(f"resultado final: \033[0;36m{MySquare2}\033[m")
